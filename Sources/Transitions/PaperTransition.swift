@@ -16,8 +16,8 @@ public struct PaperTransition: Transition {
     }
 }
 
-extension TransitionPhase {
-    fileprivate var blur: CGFloat {
+fileprivate extension TransitionPhase {
+    var blur: CGFloat {
         switch self {
         case .willAppear: return 3.5
         case .identity: return .zero
@@ -25,7 +25,7 @@ extension TransitionPhase {
         }
     }
     
-    fileprivate var offset: CGFloat {
+    var offset: CGFloat {
         switch self {
         case .willAppear: return 500
         case .identity: return .zero
@@ -33,7 +33,7 @@ extension TransitionPhase {
         }
     }
     
-    fileprivate var ofsset: CGFloat {
+    var ofsset: CGFloat {
         switch self {
         case .willAppear: return 500
         case .identity: return .zero
@@ -41,7 +41,7 @@ extension TransitionPhase {
         }
     }
     
-    fileprivate var rotation: Angle {
+    var rotation: Angle {
         switch self {
         case .willAppear: return .degrees(30)
         case .identity: return .zero
