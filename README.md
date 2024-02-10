@@ -16,7 +16,7 @@
 
 <h3>Drop Transition</h3>
 <div style="text-align:center; margin-bottom:20px;">
-  <img src="https://github.com/eminsaleck/SwiftUI-transitions/blob/e4676a6c4315b452c1642395606d01386a685809/Sources/Transitions/examples_gifs/drop.gif" width="200px" />
+  <img src="https://github.com/eminsaleck/SwiftUI-transitions/blob/6898bf50716e71c344528ab3ccc50f395353cdce/Sources/Transitions/examples_gifs/paper.gif" width="200px" />
 </div>
 
 <h2>Getting Started</h2>
