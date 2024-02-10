@@ -10,9 +10,14 @@ let package = Package(
         .library(
             name: "Transitions",
             targets: ["Transitions"]),
+        .library(
+            name: "SwipeGesture",
+            targets: ["SwipeGesture"]),
     ],
     targets: [
         .target(
-            name: "Transitions")
+            name: "Transitions"),
+        .target(
+            name: "SwipeGesture")
     ]
 )
