@@ -32,8 +32,8 @@ public struct HeroWrapper<Content: View>: View {
                 window.isUserInteractionEnabled = false
                 window.isHidden = false
                 
-                let heroLayer = HeroLayerView().environmentObject(hero)
-                let rootViewController = UIHostingController(rootView: heroLayer)
+                let heroLayer = HeroLayerView()
+                let rootViewController = UIHostingController(rootView: heroLayer.environmentObject(hero))
                 rootViewController.view.frame = windowScene.screen.bounds
                 rootViewController.view.backgroundColor = .clear
                 
@@ -110,9 +110,9 @@ public struct SourceView<Content: View>: View {
     @EnvironmentObject private var hero: HeroDomain
     @ViewBuilder var content: Content
     
-    
     public init(id: String, content: () -> Content) {
         self.content = content()
+        self.id = id
     }
     
     public var body: some View {
@@ -157,6 +157,7 @@ public struct DestinationView<Content: View>: View {
     
     public init(id: String, content: () -> Content) {
         self.content = content()
+        self.id = id
     }
     
     public var body: some View {
